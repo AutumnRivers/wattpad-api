@@ -1,0 +1,92 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "wattpad-api",
+        "scope": null,
+        "escapedName": "wattpad-api",
+        "name": "wattpad-api",
+        "rawSpec": "",
+        "spec": "latest",
+        "type": "tag"
+      },
+      "/storage/emulated/0"
+    ]
+  ],
+  "_from": "wattpad-api",
+  "_id": "wattpad-api@0.1.2",
+  "_inBundle": false,
+  "_inCache": true,
+  "_integrity": "sha1-uOj88F6vifhCXozg9Vi9cqqPkAw=",
+  "_location": "/wattpad-api",
+  "_nodeVersion": "6.11.4",
+  "_npmOperationalInternal": {
+    "host": "s3://npm-registry-packages",
+    "tmp": "tmp/wattpad-api-0.1.0.tgz_1512857482894_0.020188790513202548"
+  },
+  "_npmUser": {
+    "name": "smartieplays",
+    "email": "jprossela@gmail.com"
+  },
+  "_npmVersion": "3.10.10",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "wattpad-api",
+    "name": "wattpad-api",
+    "escapedName": "wattpad-api",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/wattpad-api/-/wattpad-api-0.1.2.tgz",
+  "_shasum": "b8e8fcf05eaf89f8425e8ce0f558bd72aa8f900c",
+  "_shrinkwrap": null,
+  "_spec": "wattpad-api",
+  "_where": "/home/pi/Documents/DiscordBots",
+  "author": {
+    "name": "SmartiePlays"
+  },
+  "bugs": {
+    "url": "https://github.com/SmartieYT/wattpad-api/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "snekfetch": "^3.5.8"
+  },
+  "deprecated": false,
+  "description": "A (barely) functional module for working with the Wattpad API!",
+  "devDependencies": {},
+  "directories": {},
+  "dist": {
+    "shasum": "a322e56fcb044448e24813c580d743f55b8d700c",
+    "tarball": "https://registry.npmjs.org/wattpad-api/-/wattpad-api-0.1.0.tgz"
+  },
+  "homepage": "https://github.com/SmartieYT/wattpad-api#readme",
+  "keywords": [
+    "wattpad",
+    "api"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "maintainers": [
+    {
+      "name": "smartieplays",
+      "email": "jprossela@gmail.com"
+    }
+  ],
+  "name": "wattpad-api",
+  "optionalDependencies": {},
+  "repository": {
+    "url": "git+https://github.com/SmartieYT/wattpad-api.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "0.2.1"
+}

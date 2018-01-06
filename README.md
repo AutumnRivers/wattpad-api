@@ -30,47 +30,29 @@ Then you search. So, what are the arguments?
 ## Docs and stuff
 All of these are returned in a promise. If you're wondering why, skip to the Q&A.
 
-`storyTitle` - Return the story's title.
-
-`storyDesc` - Return the story's description.
-
-`storyAuthor` - Return the story author's name.
-
-`storyCover` - Return the URL for the cover of your story.
-
-`storyReadCount` - Return the story's read count.
-
-`storyVoteCount` - Return the total amount of votes the story has.
-
-`storyAuthorAvatar` - Return the story author's avatar.
-
-`storyAuthorFullName` - Return the story author's full name.
-
-`storiesData` - Return the full JSON output.
-**Note:** `storiesData` has an extra argument.  
-limit: Limit the amount of stories that are returned. Defaults to 5.
+The docs have been moved to [here](https://www.gitbook.com/book/smartieyt/wattpad-api-docs/details).
 
 ## Q&A
-**Are you associated with Wattpad, do you know anybody from Wattpad, etc.?**
+**Are you associated with Wattpad, do you know anybody from Wattpad, etc.?**  
 No, I am not associated with Wattpad. I'm not stealing anything here, I'm just simplifying the use of their API.
 
-**Why is everything in a promise?**
+**Why is everything in a promise?**  
 Because I suck at coding. But hey, it works!
 
-**Your code is messy, you used a const wrong, I don't even know what I'm looking at, etc.**
+**Your code is messy, you used a const wrong, I don't even know what I'm looking at, etc.**  
 See above.
 
-**Can you add {insert feature}?**
+**Can you add {insert feature}?**  
 Probably, yeah. If you want to add it yourself, feel free to make a pull request.
 
-**Does this mean I can read stories from my command line, browser, discord bot, etc?????**
+**Does this mean I can read stories from my command line, browser, discord bot, etc?????**  
 No, it does not. The Wattpad API does not return the content of the story's parts.
 
-**This is way too simplified!**
+**This is way too simplified!**  
 I know, I know. This may look like spoon-feeding. But really, I'm just trying to help out!
 
-**I have an issue!**
+**I have an issue!**  
 Please try doing what you were doing again a few times more before opening an issue.
 
-**Can I use this for my website, discord bot, etc?**
+**Can I use this for my website, discord bot, etc?**  
 Sure, go right ahead!

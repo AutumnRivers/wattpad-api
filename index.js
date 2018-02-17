@@ -3,7 +3,7 @@ const noKey = "You need an API key!";
 const noQuery = "You need to enter something for a query.";
 const noID = "You need a list ID, normal search queries will not work!";
 
-exports.storyTitle = (apikey, query, offset) => {
+exports.storyTitle = (apikey, query, offset, mature) => {
 	{
 	const authToken = "Basic " + apikey;
 	if(!query || typeof query !== "string") {
@@ -16,14 +16,17 @@ exports.storyTitle = (apikey, query, offset) => {
 	if(!apikey) {
 		throw "You need an API key!"
 	}
+	if(mature !== 0 && mature !== 1) {
+		var mature = 0
+	}
 	
-	var data = fetch.get(`https:/\/api.wattpad.com:443/v4/stories/?query=${query}&limit=1&offset=${offset}`).set('Authorization', authToken).then(request => JSON.parse(JSON.stringify(request.body.stories))[0])
+	var data = fetch.get(`https:/\/api.wattpad.com:443/v4/stories/?query=${query}&limit=1&offset=${offset}&mature=${mature}`).set('Authorization', authToken).then(request => JSON.parse(JSON.stringify(request.body.stories))[0])
 	}
    const storyTitle = data.then(story => story.title)
    return storyTitle
 }
 
-exports.storyDesc = (apikey, query, offset) => {
+exports.storyDesc = (apikey, query, offset, mature) => {
 	{
 	const authToken = "Basic " + apikey;
 	if(!query || typeof query !== "string") {
@@ -36,14 +39,17 @@ exports.storyDesc = (apikey, query, offset) => {
 	if(!apikey) {
 		throw "You need an API key!"
 	}
+	if(mature !== 0 && mature !== 1) {
+		var mature = 0
+	}
 	
-	var data = fetch.get(`https:/\/api.wattpad.com:443/v4/stories/?query=${query}&limit=1&offset=${offset}`).set('Authorization', authToken).then(request => JSON.parse(JSON.stringify(request.body.stories))[0])
+	var data = fetch.get(`https:/\/api.wattpad.com:443/v4/stories/?query=${query}&limit=1&offset=${offset}&mature=${mature}`).set('Authorization', authToken).then(request => JSON.parse(JSON.stringify(request.body.stories))[0])
     }
    const storyDesc = data.then(story => story.description)
    return storyDesc
 }
 
-exports.storyAuthor = (apikey, query, offset) => {
+exports.storyAuthor = (apikey, query, offset, mature) => {
 	{
 	const authToken = "Basic " + apikey;
 	if(!query || typeof query !== "string") {
@@ -56,14 +62,17 @@ exports.storyAuthor = (apikey, query, offset) => {
 	if(!apikey) {
 		throw "You need an API key!"
 	}
+	if(mature !== 0 && mature !== 1) {
+		var mature = 0
+	}
 	
-	var data = fetch.get(`https:/\/api.wattpad.com:443/v4/stories/?query=${query}&limit=1&offset=${offset}`).set('Authorization', authToken).then(request => JSON.parse(JSON.stringify(request.body.stories))[0])
+	var data = fetch.get(`https:/\/api.wattpad.com:443/v4/stories/?query=${query}&limit=1&offset=${offset}&mature=${mature}`).set('Authorization', authToken).then(request => JSON.parse(JSON.stringify(request.body.stories))[0])
     }
    const storyAuthor = data.then(story => story.user.name)
    return storyAuthor
 }
 
-exports.storyCover = (apikey, query, offset) => {
+exports.storyCover = (apikey, query, offset, mature) => {
 	{
 	const authToken = "Basic " + apikey;
 	if(!query || typeof query !== "string") {
@@ -76,14 +85,17 @@ exports.storyCover = (apikey, query, offset) => {
 	if(!apikey) {
 		throw "You need an API key!"
 	}
+	if(mature !== 0 && mature !== 1) {
+		var mature = 0
+	}
 	
-	var data = fetch.get(`https:/\/api.wattpad.com:443/v4/stories/?query=${query}&limit=1&offset=${offset}`).set('Authorization', authToken).then(request => JSON.parse(JSON.stringify(request.body.stories))[0])
+	var data = fetch.get(`https:/\/api.wattpad.com:443/v4/stories/?query=${query}&limit=1&offset=${offset}&mature=${mature}`).set('Authorization', authToken).then(request => JSON.parse(JSON.stringify(request.body.stories))[0])
     }
    const storyCover = data.then(story => story.cover)
    return storyCover
 }
 
-exports.storyReadCount = (apikey, query, offset) => {
+exports.storyReadCount = (apikey, query, offset, mature) => {
 	{
 	const authToken = "Basic " + apikey;
 	if(!query || typeof query !== "string") {
@@ -96,14 +108,17 @@ exports.storyReadCount = (apikey, query, offset) => {
 	if(!apikey) {
 		throw "You need an API key!"
 	}
+	if(mature !== 0 && mature !== 1) {
+		var mature = 0
+	}
 	
-	var data = fetch.get(`https:/\/api.wattpad.com:443/v4/stories/?query=${query}&limit=1&offset=${offset}`).set('Authorization', authToken).then(request => JSON.parse(JSON.stringify(request.body.stories))[0])
+	var data = fetch.get(`https:/\/api.wattpad.com:443/v4/stories/?query=${query}&limit=1&offset=${offset}&mature=${mature}`).set('Authorization', authToken).then(request => JSON.parse(JSON.stringify(request.body.stories))[0])
     }
    const storyReadCount = data.then(story => story.readCount)
    return storyReadCount
 }
 
-exports.storyVoteCount = (apikey, query, offset) => {
+exports.storyVoteCount = (apikey, query, offset, mature) => {
 	{
 	const authToken = "Basic " + apikey;
 	if(!query || typeof query !== "string") {
@@ -116,14 +131,17 @@ exports.storyVoteCount = (apikey, query, offset) => {
 	if(!apikey) {
 		throw "You need an API key!"
 	}
+	if(mature !== 0 && mature !== 1) {
+		var mature = 0
+	}
 	
-	var data = fetch.get(`https:/\/api.wattpad.com:443/v4/stories/?query=${query}&limit=1&offset=${offset}`).set('Authorization', authToken).then(request => JSON.parse(JSON.stringify(request.body.stories))[0])
+	var data = fetch.get(`https:/\/api.wattpad.com:443/v4/stories/?query=${query}&limit=1&offset=${offset}&mature=${mature}`).set('Authorization', authToken).then(request => JSON.parse(JSON.stringify(request.body.stories))[0])
     }
    const storyVoteCount = data.then(story => story.voteCount)
    return storyVoteCount
 }
 
-exports.storyAuthorFullName = (apikey, query, offset) => {
+exports.storyAuthorFullName = (apikey, query, offset, mature) => {
 	{
 	const authToken = "Basic " + apikey;
 	if(!query || typeof query !== "string") {
@@ -136,14 +154,17 @@ exports.storyAuthorFullName = (apikey, query, offset) => {
 	if(!apikey) {
 		throw "You need an API key!"
 	}
+	if(mature !== 0 && mature !== 1) {
+		var mature = 0
+	}
 	
-	var data = fetch.get(`https:/\/api.wattpad.com:443/v4/stories/?query=${query}&limit=1&offset=${offset}`).set('Authorization', authToken).then(request => JSON.parse(JSON.stringify(request.body.stories))[0])
+	var data = fetch.get(`https:/\/api.wattpad.com:443/v4/stories/?query=${query}&limit=1&offset=${offset}&mature=${mature}`).set('Authorization', authToken).then(request => JSON.parse(JSON.stringify(request.body.stories))[0])
     }
    const storyAuthorFullName = data.then(story => story.user.fullname)
    return storyAuthorFullName
 }
 
-exports.storyAuthorAvatar = (apikey, query, offset) => {
+exports.storyAuthorAvatar = (apikey, query, offset, mature) => {
 	{
 	const authToken = "Basic " + apikey;
 	if(!query || typeof query !== "string") {
@@ -156,14 +177,17 @@ exports.storyAuthorAvatar = (apikey, query, offset) => {
 	if(!apikey) {
 		throw "You need an API key!"
 	}
+	if(mature !== 0 && mature !== 1) {
+		var mature = 0
+	}
 	
-	var data = fetch.get(`https:/\/api.wattpad.com:443/v4/stories/?query=${query}&limit=1&offset=${offset}`).set('Authorization', authToken).then(request => JSON.parse(JSON.stringify(request.body.stories))[0])
+	var data = fetch.get(`https:/\/api.wattpad.com:443/v4/stories/?query=${query}&limit=1&offset=${offset}&mature=${mature}`).set('Authorization', authToken).then(request => JSON.parse(JSON.stringify(request.body.stories))[0])
     }
    const storyAuthorAvatar = data.then(story => story.user.avatar)
    return storyAuthorAvatar
 }
 
-exports.storiesData = (apikey, query, offset, limit) => {
+exports.storiesData = (apikey, query, offset, limit, mature) => {
 	{
 	const authToken = "Basic " + apikey;
 	if(!query || typeof query !== "string") {
@@ -179,8 +203,11 @@ exports.storiesData = (apikey, query, offset, limit) => {
 	if(!limit) {
 		var limit = 5
 	}
+	if(mature !== 0 && mature !== 1) {
+		var mature = 0
+	}
 	
-	var data = fetch.get(`https:/\/api.wattpad.com:443/v4/stories/?query=${query}&limit=${limit}&offset=${offset}`).set('Authorization', authToken).then(request => JSON.parse(JSON.stringify(request.body.stories)))
+	var data = fetch.get(`https:/\/api.wattpad.com:443/v4/stories/?query=${query}&limit=${limit}&offset=${offset}&mature=${mature}`).set('Authorization', authToken).then(request => JSON.parse(JSON.stringify(request.body.stories)))
     }
    const storiesData = data
    return storiesData
